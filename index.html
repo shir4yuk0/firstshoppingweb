@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>shopping web</title>
+</head>
+<style>
+	body{
+		text-align:center;
+	}
+	.gridcontainer1{
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-gap:60px;
+		height:55px;
+		background:transparent;
+
+		}
+	.foto1{
+		width:50px;
+		height:50px;
+		}
+	.foto1nav{
+		width:400px;
+		height:55px;
+		border-radius:10px;
+		text-align:center;
+		background:white;
+	}
+	.gridcontainer2{
+		display:grid;
+		grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+		grid-gap:10px;
+		}
+	.box{
+		padding:20px;
+		border:1px solid white;
+		text-align:center;
+		border-radius:20px;
+		}
+	.stock1{
+		font-size:20px;
+		color:lime;
+		background:white;
+		border-radius:10px;
+		}
+	.stock2{
+		font-size:20px;
+		color:red;
+		}
+	.productName{
+		font-size:18px;
+		color:white;
+		}
+	.price{
+		font-size:25px;
+		color:yellow;
+		}
+	.B1{
+		width:100px;
+		height:40px;
+		color:lime;
+		background:transparent;
+		border-radius:15px;
+		}
+	.B2{
+		width:100px;
+		height:40px;
+		color:cyan;
+		background:transparent;
+		border-radius:15px;
+		}
+	.productphoto1{
+		width:100px;
+		height:100px;
+		border-radius:10px;
+		border:2px solid lime;
+		}
+	.productphoto2{
+		width:100px;
+		height:100px;
+		border-radius:10px;
+		border:2px solid red;
+		}
+	.pricenum{
+		font-size:22px;
+		color:white;
+		}
+</style>
+<body bgcolor="#3245BA">
+<h2>-<font color="white">Yuko</font><font color="red">Shopping</font><font color="black">Web</font>-</h2>
+<hr color="white">
+	<nav class="gridcontainer1">
+		<a href="http://www.google.com/"><nav class="foto1nav"><img class="foto1" src="./icons/home.jpg"></nav></a>
+		<nav class="foto1nav"><img class="foto1" src="./icons/contact.jpg"></nav>
+		<nav class="foto1nav"><img class="foto1" src="./icons/cart.png"></nav>
+	</nav>	
+<hr color="white">
+<br>
+
+<!---container1------------------------------------------------------------------------------------------------------------>
+
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRlo1EJXsi-kE_cHWMvJmGdlpBEgDaisYTBb-FwTEDTXsprFP47HAAXLZXVtk6I2I4ZT0kSH5mpY-R6ucNmhq9XQIjarxKEFvmE55KK796SDzWGPxjyOuXgh5cBaf-fauOvmoZCgA&usqp=CAc">
+			<p class="productName">Mini Jean Skirt</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ4LayJZHoNunZDaFW0ECVe7ALZT7bgeSB5R-B6doMQ0E_9DJy8uDgtucgwdL0Ia9GtUk19-p9L7_O0sqSVMaxXLDL8_bxaV1Ce-b177ionTOndpAAurSbtjP2C6vfNWyGUr-u0Tw&usqp=CAc">
+			<p class="productName">Mini Red Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSDL7Eiw9v1b_nNPUASwrtlWwJOfQ3vqqioa6AL9iZ6XSznK7fQMo0NacV_3JxLjbHNi-UMiUOPFo4o9P4ssFEomidGfj_RdlYlRRprrqDgo-lIxDYCpqDAwBRB0-4zEJk9_yKTv9Ez8g&usqp=CAc">
+			<p class="productName">Mini White Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWYnJHQW9W_lz2O7YSkUdnDZOW9Yz8xv-eEa2jvDQkaZsXwJECP6fRq3Htx0LeSMCWFtDhK1W7FrjBugW1mBnUufBjhbwWJNxqaByw1Ld6RiO5wgBuM-fJkoBKa1XcB1UXNj8Q7f8&usqp=CAc">
+			<p class="productName">Fullset Outfit</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSrmUUcRplEScTIFIgJLhJc-TwvwVHKE0e1UQzspC51c9ufafv4oP2gpl-_wybv-4WA-5GhQKpspjNp5sSuFRLmmTyvAAh9be9ohx-nVE8AhSaX7vjNIxIZ0yJ-CPuwDfpUC5qtvtE&usqp=CAc">
+			<p class="productName">Beach Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!---container2---------------------------------------------------------------------------------------->
+
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://ae01.alicdn.com/kf/Sbd772e6aa1414c44bec7e47dc6f5f4cau.jpg">
+			<p class="productName">3in1 Bikini Set</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/shoes_men_tcc_d_44a809233a.jpg">
+			<p class="productName">Sweater</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR2RC5hK13qI2p4Lxhdt77Pb8N9_WWUlSfLFTo94OhnjOI_DE7EquhdBePlzj_D4TO4xGiVLyE0XbaSm6gcsdwl71rKKe9VMziXCVFx-y1to7fcRhP1u-hRPaMBS_3Agro5ipc3XowY&usqp=CAc">
+			<p class="productName">Top Black Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSxbC66iiaV92_eyFZp-etJKldrxqry6n8Ln7BgXcbIxclUK_mOkCu1POF7Gk1IOv51xVIrC5GPeDUOf6-vJCIE_UXd_gr6vmfQ6PszMYJ2GTBIdAe_Qpi8nxoYcfO65WhUE8fhEHwgSg&usqp=CAc">
+			<p class="productName">Winter Jacket</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://coach.scene7.com/is/image/Coach/cv934_imblk_a0?$mobileProductTile$">
+			<p class="productName">COACH Handbag</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!----container3---------------------------------------------------------------------------------------------------------->
+
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://hellobubble.com/cdn/shop/products/hydrating_bundled_7e19f9d5-4e17-4649-bd71-3460b8981af3_1200x960.jpg?v=1607414198">
+			<p class="productName">Bubble Skincare</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">10</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://anothercotton.com/cdn/shop/files/ACL-SRC-Hoodie-VB-Front-Neu2.jpg?v=1729687178&width=1080">
+			<p class="productName">Hoodie</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://product.hstatic.net/200000551679/product/vn-11134207-7ras8-m3odl8e9rlx169_f8b027132cf143669c231fed06ce8756_1024x1024.jpg">
+			<p class="productName">Powder Blush</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSq2ufNGh7qUQvU72NeYiHj8GBk7J9DMdtdFYwIwVvD3mcZJh7_tripYDxjRHm3-ywIiJrKpqSmBzLg5vG0fncHBzmfKuaXwDDeElqkLvFHveME9dN-Xkww4nq9cQ&usqp=CAc">
+			<p class="productName">Gray eyes lens</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://i.ebayimg.com/images/g/RuIAAOSwqk5gjymS/s-l1200.jpg">
+			<p class="productName">Badminton Racket</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!---container4------------------------------------------------------------------------------------------------------------->
+	
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSr2erxhEiLl-GAH4aRM71dcw_Xo_OAJ49Qj1_4jV07vgMKgDWpWVU2lsT45J9OWR9GoQY_YOA9lZVWbSg2wrrJKA0-L-_C34ZfE3fV6dUgDi3IC2dC3pOysKog6_4oltglT_3Ygg&usqp=CAc">
+			<p class="productName">Cardigan</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQYkv2sgKI5xfLOdtDzW9A77DsClYF0TFjv81uOpxVCedgnkOe2unHjF2CK8syZcLMgfzdAfoevrbzij3vjKu64KU53CliAPh9_md7SonQ35uAVbaBFY4pn-O1I63TXxWcoj1QtnU0_Qw&usqp=CAc">
+			<p class="productName">Y2K Skirt</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://www.charleskeith.vn/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-vn-products/default/dw06432b13/images/hi-res/2023-L3-CK1-60361462-01-8.jpg?sw=756&sh=1008">
+			<p class="productName">High Heels</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8.3</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://www.produits-scandinaves.com/18188-large_default/winterland-merino-unisex-hat-dale-of-norway.jpg">
+			<p class="productName">Redtoque</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRYswkzDc1ak936IylshDQD5NNDpQXS_OOxOD911JQh5aM5DrlS4wba5KCnsJyBay5YLYQz8bCJZAmT9VP7PabQcrVcpg4rYqHMaKcTie16YhVQhNR0RShs89fDt3LpIIeh6IGCxz9B8g&usqp=CAc">
+			<p class="productName">Beach Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRlo1EJXsi-kE_cHWMvJmGdlpBEgDaisYTBb-FwTEDTXsprFP47HAAXLZXVtk6I2I4ZT0kSH5mpY-R6ucNmhq9XQIjarxKEFvmE55KK796SDzWGPxjyOuXgh5cBaf-fauOvmoZCgA&usqp=CAc">
+			<p class="productName">Mini Jean Skirt</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ4LayJZHoNunZDaFW0ECVe7ALZT7bgeSB5R-B6doMQ0E_9DJy8uDgtucgwdL0Ia9GtUk19-p9L7_O0sqSVMaxXLDL8_bxaV1Ce-b177ionTOndpAAurSbtjP2C6vfNWyGUr-u0Tw&usqp=CAc">
+			<p class="productName">Mini Red Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSDL7Eiw9v1b_nNPUASwrtlWwJOfQ3vqqioa6AL9iZ6XSznK7fQMo0NacV_3JxLjbHNi-UMiUOPFo4o9P4ssFEomidGfj_RdlYlRRprrqDgo-lIxDYCpqDAwBRB0-4zEJk9_yKTv9Ez8g&usqp=CAc">
+			<p class="productName">Mini White Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWYnJHQW9W_lz2O7YSkUdnDZOW9Yz8xv-eEa2jvDQkaZsXwJECP6fRq3Htx0LeSMCWFtDhK1W7FrjBugW1mBnUufBjhbwWJNxqaByw1Ld6RiO5wgBuM-fJkoBKa1XcB1UXNj8Q7f8&usqp=CAc">
+			<p class="productName">Fullset Outfit</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSrmUUcRplEScTIFIgJLhJc-TwvwVHKE0e1UQzspC51c9ufafv4oP2gpl-_wybv-4WA-5GhQKpspjNp5sSuFRLmmTyvAAh9be9ohx-nVE8AhSaX7vjNIxIZ0yJ-CPuwDfpUC5qtvtE&usqp=CAc">
+			<p class="productName">Beach Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!---container2---------------------------------------------------------------------------------------->
+
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://ae01.alicdn.com/kf/Sbd772e6aa1414c44bec7e47dc6f5f4cau.jpg">
+			<p class="productName">3in1 Bikini Set</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/shoes_men_tcc_d_44a809233a.jpg">
+			<p class="productName">Sweater</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR2RC5hK13qI2p4Lxhdt77Pb8N9_WWUlSfLFTo94OhnjOI_DE7EquhdBePlzj_D4TO4xGiVLyE0XbaSm6gcsdwl71rKKe9VMziXCVFx-y1to7fcRhP1u-hRPaMBS_3Agro5ipc3XowY&usqp=CAc">
+			<p class="productName">Top Black Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSxbC66iiaV92_eyFZp-etJKldrxqry6n8Ln7BgXcbIxclUK_mOkCu1POF7Gk1IOv51xVIrC5GPeDUOf6-vJCIE_UXd_gr6vmfQ6PszMYJ2GTBIdAe_Qpi8nxoYcfO65WhUE8fhEHwgSg&usqp=CAc">
+			<p class="productName">Winter Jacket</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://coach.scene7.com/is/image/Coach/cv934_imblk_a0?$mobileProductTile$">
+			<p class="productName">COACH Handbag</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!----container3---------------------------------------------------------------------------------------------------------->
+
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://hellobubble.com/cdn/shop/products/hydrating_bundled_7e19f9d5-4e17-4649-bd71-3460b8981af3_1200x960.jpg?v=1607414198">
+			<p class="productName">Bubble Skincare</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">10</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://anothercotton.com/cdn/shop/files/ACL-SRC-Hoodie-VB-Front-Neu2.jpg?v=1729687178&width=1080">
+			<p class="productName">Hoodie</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://product.hstatic.net/200000551679/product/vn-11134207-7ras8-m3odl8e9rlx169_f8b027132cf143669c231fed06ce8756_1024x1024.jpg">
+			<p class="productName">Powder Blush</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSq2ufNGh7qUQvU72NeYiHj8GBk7J9DMdtdFYwIwVvD3mcZJh7_tripYDxjRHm3-ywIiJrKpqSmBzLg5vG0fncHBzmfKuaXwDDeElqkLvFHveME9dN-Xkww4nq9cQ&usqp=CAc">
+			<p class="productName">Gray eyes lens</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://i.ebayimg.com/images/g/RuIAAOSwqk5gjymS/s-l1200.jpg">
+			<p class="productName">Badminton Racket</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!---container4------------------------------------------------------------------------------------------------------------->
+	
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSr2erxhEiLl-GAH4aRM71dcw_Xo_OAJ49Qj1_4jV07vgMKgDWpWVU2lsT45J9OWR9GoQY_YOA9lZVWbSg2wrrJKA0-L-_C34ZfE3fV6dUgDi3IC2dC3pOysKog6_4oltglT_3Ygg&usqp=CAc">
+			<p class="productName">Cardigan</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQYkv2sgKI5xfLOdtDzW9A77DsClYF0TFjv81uOpxVCedgnkOe2unHjF2CK8syZcLMgfzdAfoevrbzij3vjKu64KU53CliAPh9_md7SonQ35uAVbaBFY4pn-O1I63TXxWcoj1QtnU0_Qw&usqp=CAc">
+			<p class="productName">Y2K Skirt</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://www.charleskeith.vn/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-vn-products/default/dw06432b13/images/hi-res/2023-L3-CK1-60361462-01-8.jpg?sw=756&sh=1008">
+			<p class="productName">High Heels</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8.3</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://www.produits-scandinaves.com/18188-large_default/winterland-merino-unisex-hat-dale-of-norway.jpg">
+			<p class="productName">Redtoque</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRYswkzDc1ak936IylshDQD5NNDpQXS_OOxOD911JQh5aM5DrlS4wba5KCnsJyBay5YLYQz8bCJZAmT9VP7PabQcrVcpg4rYqHMaKcTie16YhVQhNR0RShs89fDt3LpIIeh6IGCxz9B8g&usqp=CAc">
+			<p class="productName">Beach Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRlo1EJXsi-kE_cHWMvJmGdlpBEgDaisYTBb-FwTEDTXsprFP47HAAXLZXVtk6I2I4ZT0kSH5mpY-R6ucNmhq9XQIjarxKEFvmE55KK796SDzWGPxjyOuXgh5cBaf-fauOvmoZCgA&usqp=CAc">
+			<p class="productName">Mini Jean Skirt</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ4LayJZHoNunZDaFW0ECVe7ALZT7bgeSB5R-B6doMQ0E_9DJy8uDgtucgwdL0Ia9GtUk19-p9L7_O0sqSVMaxXLDL8_bxaV1Ce-b177ionTOndpAAurSbtjP2C6vfNWyGUr-u0Tw&usqp=CAc">
+			<p class="productName">Mini Red Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSDL7Eiw9v1b_nNPUASwrtlWwJOfQ3vqqioa6AL9iZ6XSznK7fQMo0NacV_3JxLjbHNi-UMiUOPFo4o9P4ssFEomidGfj_RdlYlRRprrqDgo-lIxDYCpqDAwBRB0-4zEJk9_yKTv9Ez8g&usqp=CAc">
+			<p class="productName">Mini White Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTWYnJHQW9W_lz2O7YSkUdnDZOW9Yz8xv-eEa2jvDQkaZsXwJECP6fRq3Htx0LeSMCWFtDhK1W7FrjBugW1mBnUufBjhbwWJNxqaByw1Ld6RiO5wgBuM-fJkoBKa1XcB1UXNj8Q7f8&usqp=CAc">
+			<p class="productName">Fullset Outfit</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSrmUUcRplEScTIFIgJLhJc-TwvwVHKE0e1UQzspC51c9ufafv4oP2gpl-_wybv-4WA-5GhQKpspjNp5sSuFRLmmTyvAAh9be9ohx-nVE8AhSaX7vjNIxIZ0yJ-CPuwDfpUC5qtvtE&usqp=CAc">
+			<p class="productName">Beach Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!---container2---------------------------------------------------------------------------------------->
+
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://ae01.alicdn.com/kf/Sbd772e6aa1414c44bec7e47dc6f5f4cau.jpg">
+			<p class="productName">3in1 Bikini Set</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto:best,fl_lossy/if_w_gt_800,w_800/shoes_men_tcc_d_44a809233a.jpg">
+			<p class="productName">Sweater</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR2RC5hK13qI2p4Lxhdt77Pb8N9_WWUlSfLFTo94OhnjOI_DE7EquhdBePlzj_D4TO4xGiVLyE0XbaSm6gcsdwl71rKKe9VMziXCVFx-y1to7fcRhP1u-hRPaMBS_3Agro5ipc3XowY&usqp=CAc">
+			<p class="productName">Top Black Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSxbC66iiaV92_eyFZp-etJKldrxqry6n8Ln7BgXcbIxclUK_mOkCu1POF7Gk1IOv51xVIrC5GPeDUOf6-vJCIE_UXd_gr6vmfQ6PszMYJ2GTBIdAe_Qpi8nxoYcfO65WhUE8fhEHwgSg&usqp=CAc">
+			<p class="productName">Winter Jacket</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://coach.scene7.com/is/image/Coach/cv934_imblk_a0?$mobileProductTile$">
+			<p class="productName">COACH Handbag</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!----container3---------------------------------------------------------------------------------------------------------->
+
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://hellobubble.com/cdn/shop/products/hydrating_bundled_7e19f9d5-4e17-4649-bd71-3460b8981af3_1200x960.jpg?v=1607414198">
+			<p class="productName">Bubble Skincare</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">10</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://anothercotton.com/cdn/shop/files/ACL-SRC-Hoodie-VB-Front-Neu2.jpg?v=1729687178&width=1080">
+			<p class="productName">Hoodie</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://product.hstatic.net/200000551679/product/vn-11134207-7ras8-m3odl8e9rlx169_f8b027132cf143669c231fed06ce8756_1024x1024.jpg">
+			<p class="productName">Powder Blush</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSq2ufNGh7qUQvU72NeYiHj8GBk7J9DMdtdFYwIwVvD3mcZJh7_tripYDxjRHm3-ywIiJrKpqSmBzLg5vG0fncHBzmfKuaXwDDeElqkLvFHveME9dN-Xkww4nq9cQ&usqp=CAc">
+			<p class="productName">Gray eyes lens</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://i.ebayimg.com/images/g/RuIAAOSwqk5gjymS/s-l1200.jpg">
+			<p class="productName">Badminton Racket</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+
+<!---container4------------------------------------------------------------------------------------------------------------->
+	
+	<div class="gridcontainer2">
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSr2erxhEiLl-GAH4aRM71dcw_Xo_OAJ49Qj1_4jV07vgMKgDWpWVU2lsT45J9OWR9GoQY_YOA9lZVWbSg2wrrJKA0-L-_C34ZfE3fV6dUgDi3IC2dC3pOysKog6_4oltglT_3Ygg&usqp=CAc">
+			<p class="productName">Cardigan</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">6.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock1">In Stock</strong><br><br>
+			<img class="productphoto1" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQYkv2sgKI5xfLOdtDzW9A77DsClYF0TFjv81uOpxVCedgnkOe2unHjF2CK8syZcLMgfzdAfoevrbzij3vjKu64KU53CliAPh9_md7SonQ35uAVbaBFY4pn-O1I63TXxWcoj1QtnU0_Qw&usqp=CAc">
+			<p class="productName">Y2K Skirt</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">7</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://www.charleskeith.vn/dw/image/v2/BCWJ_PRD/on/demandware.static/-/Sites-vn-products/default/dw06432b13/images/hi-res/2023-L3-CK1-60361462-01-8.jpg?sw=756&sh=1008">
+			<p class="productName">High Heels</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">8.3</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://www.produits-scandinaves.com/18188-large_default/winterland-merino-unisex-hat-dale-of-norway.jpg">
+			<p class="productName">Redtoque</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+		<div class="box">
+			<strong class="stock2"><del>Out of Stock</del></strong><br><br>
+			<img class="productphoto2" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRYswkzDc1ak936IylshDQD5NNDpQXS_OOxOD911JQh5aM5DrlS4wba5KCnsJyBay5YLYQz8bCJZAmT9VP7PabQcrVcpg4rYqHMaKcTie16YhVQhNR0RShs89fDt3LpIIeh6IGCxz9B8g&usqp=CAc">
+			<p class="productName">Beach Dress</p>
+			<strong class="price">$</strong>
+			<strong class="pricenum">9.5</strong>
+		<br><br><br>
+			<button class="B1"><strong>View Details</strong></button>
+		<br><br>
+			<button class="B2"><strong>Add To Cart</strong></button>
+		</div>
+	</div><br>
+</body>
+</html>
