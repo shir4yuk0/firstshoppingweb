@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-device-width" initial-scale="1.0">
+	<title>My First HTML,CSS & Js combination Web</title>
+</head>
+<style>
+ body{
+  margin:110px;
+ }
+ button{
+  background:white;
+ }
+ .btbox{
+  width:200px;
+  height:8vh;
+  font-size:15px;
+  border:1px solid white;
+ }
+ .doin{
+  width:90px;
+  height:4vh;
+  border:2px solid white;
+  border-radius:4px;
+  background:white;
+  color:lime;
+ }
+ .doreg{
+  width:90px;
+  height:4vh;
+  border:2px solid white;
+  border-radius:4px;
+  background:white;
+  color:orange;
+ }
+ .goo{
+  width:350px;
+  height:4vh;
+  border:2px solid white;
+  color:blue;
+  background:white;
+  border-radius:4px;
+ }
+</style>
+<body bgcolor="black">
+<center> 
+	<h2><font color="red"> Account </font><font color="orange"> Registration </font><font color="white"> & </font><font color="red"> Account </font><font color="lime"> Login </font><font color="yellow"> Portal Of </font><font color="pink"> Yuko's Web page </font></h2><br><br>
+	
+	<button onclick="login()" class="btbox"><font color="lime">Login</font></button>&nbsp;
+	<button onclick="regist()" class="btbox"><font color="orange">Register</font></button>&nbsp;
+	<button onclick="google()" class="btbox"><font color="blue">Google-Sign-in</font></button>
+<br><br><br>
+	<div id="view"></div>
+</center>
+</body>
+<script>
+	function login(){
+	  let uia = "<h3><font color='lime'>Login To Your Account</font></h3><br><br><h4><font color='cyan'>Username:&nbsp;</font><input id='user' type='username'></h4><h4><font color='cyan'>Password:&nbsp;</font><input id='pas' type='password'></h4><br><button class='doin' onclick='dologin()'>Login</button>"
+	  document.getElementById('view').innerHTML = uia;
+	}
+	function dologin(){
+	  let username = "Yuko";
+	  let password = "yukoo@";
+	    if (document.getElementById('pas').value == password){
+	      alert("Correct Your Password");
+	      alert("Welcome Yuko");
+	    }else{
+	      alert("Try Again! Worng Your Password.");
+	    }
+	}
+	
+	function regist(){
+	  let uib = "<h3><font color='orange'>Account Registration</font></h3><br><br><h4><font color='white'>Real Name:&nbsp;</font><input id='regreal' type='username'></h4><h4><font color='white'>Username:&nbsp;</font><input id='regusr' type='username'></h4><h4><font color='white'>Password:&nbsp;</font><input id='regpas' type='password'></h4><h4><font color='white'>Birthday Date:&nbsp;</font><input type='date'></h4><button class='doreg' onclick='doreg()'>Register</button>"
+	  document.getElementById('view').innerHTML = uib;
+	}
+	function doreg(){
+	  alert("Registration Completed!");
+	}
+	
+	function google(){
+	  let uic = "<button class='goo' onclick='dogoogle()'>Connect With Your Google Account</button>"
+	    document.getElementById('view').innerHTML = uic;
+	}
+	function dogoogle(){
+	  alert("Congratulations!🎉️ Google Account Linked.");
+	}
+</script>
+</html>
